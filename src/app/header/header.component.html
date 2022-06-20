@@ -5,9 +5,9 @@
     <section>
         <form>
             <div class="searcher input-group">
-                <input type="text" class="form-control" placeholder="Find city" />
+                <input #searcher type="text" class="form-control" placeholder="Find city" />
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button">Search</button>
+                    <button class="btn btn-outline-secondary" type="button" (click)="getCity(searcher.value)">Search</button>
                 </div>
             </div>
         </form>
