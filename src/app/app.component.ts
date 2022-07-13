@@ -7,10 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'weather-app';
-  currentCity: string = '';
-
-  getCityFromSearcher(city: string) {
-    this.currentCity = city;
-  }
+  
 
 }
