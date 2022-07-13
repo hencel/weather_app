@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class MainComponent {
 
-  @Input() city: string = '';
+  @Input() weatherApiData: string = '';
 
 
 }

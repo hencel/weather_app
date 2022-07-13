@@ -8,7 +8,7 @@ import { WeatherApiService } from '../shared/services/weather-api.service';
 })
 export class WeatherComponent implements OnInit {
 
-  currentCity: string = '';
+  weatherData: string = '';
   
   constructor(public api: WeatherApiService) { }
 
@@ -16,10 +16,10 @@ export class WeatherComponent implements OnInit {
   }
 
   getCityFromSearcher(city: string) {
-    this.currentCity = city;
+    this.weatherData = city;
     let data = this.api.getWeatherFromApi(city);
     data.subscribe(data => {
-      console.log(data);
+      
     })
   }
 
