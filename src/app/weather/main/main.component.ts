@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ApiResponse } from '../../shared/model/ApiResponse';
 
 @Component({
   selector: 'app-main',
@@ -7,7 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class MainComponent {
 
-  @Input() weatherApiData: string = '';
+  @Input() weatherApiData: ApiResponse;
 
 
 }
