@@ -9,6 +9,8 @@ import { FooterComponent } from './weather/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WeatherComponent } from './weather/weather.component';
 import { WeatherApiService } from './shared/services/weather-api.service';
+import { DailyWeatherComponent } from './weather/main/daily-weather/daily-weather.component';
+import { WeeklyWeatherComponent } from './weather/main/weekly-weather/weekly-weather.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { WeatherApiService } from './shared/services/weather-api.service';
     HeaderComponent,
     MainComponent,
     FooterComponent,
-    WeatherComponent
+    WeatherComponent,
+    DailyWeatherComponent,
+    WeeklyWeatherComponent
   ],
   imports: [
     BrowserModule,

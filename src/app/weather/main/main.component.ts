@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ApiResponse } from '../../shared/model/ApiResponse';
 
 @Component({
@@ -9,6 +9,14 @@ import { ApiResponse } from '../../shared/model/ApiResponse';
 export class MainComponent {
 
   @Input() weatherApiData: ApiResponse;
+
+  overallData: Array<ApiResponse> = [];
+
+  OnInit() {
+    this.weatherApiData.list.forEach(element => {
+
+    })
+  }
 
 
 }
